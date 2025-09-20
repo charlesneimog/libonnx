@@ -82,25 +82,25 @@ void resolver_default_op_Sqrt(struct onnx_node_t * n)
 			n->init = Sqrt_init;
 			n->exit = Sqrt_exit;
 			n->reshape = Sqrt_reshape;
-			n->operator = Sqrt_bfloat16;
+			n->op = Sqrt_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Sqrt_init;
 			n->exit = Sqrt_exit;
 			n->reshape = Sqrt_reshape;
-			n->operator = Sqrt_float16;
+			n->op = Sqrt_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Sqrt_init;
 			n->exit = Sqrt_exit;
 			n->reshape = Sqrt_reshape;
-			n->operator = Sqrt_float32;
+			n->op = Sqrt_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Sqrt_init;
 			n->exit = Sqrt_exit;
 			n->reshape = Sqrt_reshape;
-			n->operator = Sqrt_float64;
+			n->op = Sqrt_float64;
 			break;
 		default:
 			break;
@@ -114,19 +114,19 @@ void resolver_default_op_Sqrt(struct onnx_node_t * n)
 			n->init = Sqrt_init;
 			n->exit = Sqrt_exit;
 			n->reshape = Sqrt_reshape;
-			n->operator = Sqrt_float16;
+			n->op = Sqrt_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Sqrt_init;
 			n->exit = Sqrt_exit;
 			n->reshape = Sqrt_reshape;
-			n->operator = Sqrt_float32;
+			n->op = Sqrt_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Sqrt_init;
 			n->exit = Sqrt_exit;
 			n->reshape = Sqrt_reshape;
-			n->operator = Sqrt_float64;
+			n->op = Sqrt_float64;
 			break;
 		default:
 			break;
@@ -140,19 +140,19 @@ void resolver_default_op_Sqrt(struct onnx_node_t * n)
 			n->init = Sqrt_init;
 			n->exit = Sqrt_exit;
 			n->reshape = Sqrt_reshape;
-			n->operator = Sqrt_float16;
+			n->op = Sqrt_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Sqrt_init;
 			n->exit = Sqrt_exit;
 			n->reshape = Sqrt_reshape;
-			n->operator = Sqrt_float32;
+			n->op = Sqrt_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Sqrt_init;
 			n->exit = Sqrt_exit;
 			n->reshape = Sqrt_reshape;
-			n->operator = Sqrt_float64;
+			n->op = Sqrt_float64;
 			break;
 		default:
 			break;

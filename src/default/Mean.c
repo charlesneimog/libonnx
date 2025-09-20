@@ -121,25 +121,25 @@ void resolver_default_op_Mean(struct onnx_node_t * n)
 			n->init = Mean_init;
 			n->exit = Mean_exit;
 			n->reshape = Mean_reshape;
-			n->operator = Mean_bfloat16;
+			n->op = Mean_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Mean_init;
 			n->exit = Mean_exit;
 			n->reshape = Mean_reshape;
-			n->operator = Mean_float16;
+			n->op = Mean_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Mean_init;
 			n->exit = Mean_exit;
 			n->reshape = Mean_reshape;
-			n->operator = Mean_float32;
+			n->op = Mean_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Mean_init;
 			n->exit = Mean_exit;
 			n->reshape = Mean_reshape;
-			n->operator = Mean_float64;
+			n->op = Mean_float64;
 			break;
 		default:
 			break;
@@ -153,19 +153,19 @@ void resolver_default_op_Mean(struct onnx_node_t * n)
 			n->init = Mean_init;
 			n->exit = Mean_exit;
 			n->reshape = Mean_reshape;
-			n->operator = Mean_float16;
+			n->op = Mean_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Mean_init;
 			n->exit = Mean_exit;
 			n->reshape = Mean_reshape;
-			n->operator = Mean_float32;
+			n->op = Mean_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Mean_init;
 			n->exit = Mean_exit;
 			n->reshape = Mean_reshape;
-			n->operator = Mean_float64;
+			n->op = Mean_float64;
 			break;
 		default:
 			break;
@@ -179,19 +179,19 @@ void resolver_default_op_Mean(struct onnx_node_t * n)
 			n->init = Mean_init;
 			n->exit = Mean_exit;
 			n->reshape = Mean_reshape;
-			n->operator = Mean_float16;
+			n->op = Mean_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Mean_init;
 			n->exit = Mean_exit;
 			n->reshape = Mean_reshape;
-			n->operator = Mean_float32;
+			n->op = Mean_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Mean_init;
 			n->exit = Mean_exit;
 			n->reshape = Mean_reshape;
-			n->operator = Mean_float64;
+			n->op = Mean_float64;
 			break;
 		default:
 			break;
@@ -205,19 +205,19 @@ void resolver_default_op_Mean(struct onnx_node_t * n)
 			n->init = Mean_init;
 			n->exit = Mean_exit;
 			n->reshape = Mean_reshape;
-			n->operator = Mean_float16;
+			n->op = Mean_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Mean_init;
 			n->exit = Mean_exit;
 			n->reshape = Mean_reshape;
-			n->operator = Mean_float32;
+			n->op = Mean_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Mean_init;
 			n->exit = Mean_exit;
 			n->reshape = Mean_reshape;
-			n->operator = Mean_float64;
+			n->op = Mean_float64;
 			break;
 		default:
 			break;

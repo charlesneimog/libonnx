@@ -41,7 +41,7 @@ void resolver_default_op_Not(struct onnx_node_t * n)
 			n->init = Not_init;
 			n->exit = Not_exit;
 			n->reshape = Not_reshape;
-			n->operator = Not_bool;
+			n->op = Not_bool;
 			break;
 		default:
 			break;

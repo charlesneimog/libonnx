@@ -437,97 +437,97 @@ void resolver_default_op_Transpose(struct onnx_node_t * n)
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_bool;
+			n->op = Transpose_bool;
 			break;
 		case ONNX_TENSOR_TYPE_INT8:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_int8;
+			n->op = Transpose_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT16:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_int16;
+			n->op = Transpose_int16;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_int32;
+			n->op = Transpose_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_int64;
+			n->op = Transpose_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_uint8;
+			n->op = Transpose_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT16:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_uint16;
+			n->op = Transpose_uint16;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_uint32;
+			n->op = Transpose_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_uint64;
+			n->op = Transpose_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_BFLOAT16:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_bfloat16;
+			n->op = Transpose_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_float16;
+			n->op = Transpose_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_float32;
+			n->op = Transpose_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_float64;
+			n->op = Transpose_float64;
 			break;
 		case ONNX_TENSOR_TYPE_COMPLEX64:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_complex64;
+			n->op = Transpose_complex64;
 			break;
 		case ONNX_TENSOR_TYPE_COMPLEX128:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_complex128;
+			n->op = Transpose_complex128;
 			break;
 		case ONNX_TENSOR_TYPE_STRING:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_string;
+			n->op = Transpose_string;
 			break;
 		default:
 			break;
@@ -541,91 +541,91 @@ void resolver_default_op_Transpose(struct onnx_node_t * n)
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_bool;
+			n->op = Transpose_bool;
 			break;
 		case ONNX_TENSOR_TYPE_INT8:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_int8;
+			n->op = Transpose_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT16:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_int16;
+			n->op = Transpose_int16;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_int32;
+			n->op = Transpose_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_int64;
+			n->op = Transpose_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_uint8;
+			n->op = Transpose_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT16:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_uint16;
+			n->op = Transpose_uint16;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_uint32;
+			n->op = Transpose_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_uint64;
+			n->op = Transpose_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_float16;
+			n->op = Transpose_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_float32;
+			n->op = Transpose_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_float64;
+			n->op = Transpose_float64;
 			break;
 		case ONNX_TENSOR_TYPE_COMPLEX64:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_complex64;
+			n->op = Transpose_complex64;
 			break;
 		case ONNX_TENSOR_TYPE_COMPLEX128:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_complex128;
+			n->op = Transpose_complex128;
 			break;
 		case ONNX_TENSOR_TYPE_STRING:
 			n->init = Transpose_init;
 			n->exit = Transpose_exit;
 			n->reshape = Transpose_reshape;
-			n->operator = Transpose_string;
+			n->op = Transpose_string;
 			break;
 		default:
 			break;

@@ -53,7 +53,7 @@ void resolver_default_op_Size(struct onnx_node_t * n)
 			n->init = Size_init;
 			n->exit = Size_exit;
 			n->reshape = Size_reshape;
-			n->operator = Size_operator;
+			n->op = Size_operator;
 			break;
 		default:
 			break;
@@ -81,7 +81,7 @@ void resolver_default_op_Size(struct onnx_node_t * n)
 			n->init = Size_init;
 			n->exit = Size_exit;
 			n->reshape = Size_reshape;
-			n->operator = Size_operator;
+			n->op = Size_operator;
 			break;
 		default:
 			break;

@@ -67,19 +67,19 @@ void resolver_default_op_Softsign(struct onnx_node_t * n)
 			n->init = Softsign_init;
 			n->exit = Softsign_exit;
 			n->reshape = Softsign_reshape;
-			n->operator = Softsign_float16;
+			n->op = Softsign_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Softsign_init;
 			n->exit = Softsign_exit;
 			n->reshape = Softsign_reshape;
-			n->operator = Softsign_float32;
+			n->op = Softsign_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Softsign_init;
 			n->exit = Softsign_exit;
 			n->reshape = Softsign_reshape;
-			n->operator = Softsign_float64;
+			n->op = Softsign_float64;
 			break;
 		default:
 			break;

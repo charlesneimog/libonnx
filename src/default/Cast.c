@@ -1713,85 +1713,85 @@ void resolver_default_op_Cast(struct onnx_node_t * n)
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_bool;
+			n->op = Cast_bool;
 			break;
 		case ONNX_TENSOR_TYPE_INT8:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_int8;
+			n->op = Cast_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT16:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_int16;
+			n->op = Cast_int16;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_int32;
+			n->op = Cast_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_int64;
+			n->op = Cast_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_uint8;
+			n->op = Cast_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT16:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_uint16;
+			n->op = Cast_uint16;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_uint32;
+			n->op = Cast_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_uint64;
+			n->op = Cast_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_BFLOAT16:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_bfloat16;
+			n->op = Cast_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_float16;
+			n->op = Cast_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_float32;
+			n->op = Cast_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_float64;
+			n->op = Cast_float64;
 			break;
 		case ONNX_TENSOR_TYPE_STRING:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_string;
+			n->op = Cast_string;
 			break;
 		default:
 			break;
@@ -1805,79 +1805,79 @@ void resolver_default_op_Cast(struct onnx_node_t * n)
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_bool;
+			n->op = Cast_bool;
 			break;
 		case ONNX_TENSOR_TYPE_INT8:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_int8;
+			n->op = Cast_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT16:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_int16;
+			n->op = Cast_int16;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_int32;
+			n->op = Cast_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_int64;
+			n->op = Cast_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_uint8;
+			n->op = Cast_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT16:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_uint16;
+			n->op = Cast_uint16;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_uint32;
+			n->op = Cast_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_uint64;
+			n->op = Cast_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_float16;
+			n->op = Cast_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_float32;
+			n->op = Cast_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_float64;
+			n->op = Cast_float64;
 			break;
 		case ONNX_TENSOR_TYPE_STRING:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_string;
+			n->op = Cast_string;
 			break;
 		default:
 			break;
@@ -1891,73 +1891,73 @@ void resolver_default_op_Cast(struct onnx_node_t * n)
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_bool;
+			n->op = Cast_bool;
 			break;
 		case ONNX_TENSOR_TYPE_INT8:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_int8;
+			n->op = Cast_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT16:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_int16;
+			n->op = Cast_int16;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_int32;
+			n->op = Cast_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_int64;
+			n->op = Cast_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_uint8;
+			n->op = Cast_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT16:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_uint16;
+			n->op = Cast_uint16;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_uint32;
+			n->op = Cast_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_uint64;
+			n->op = Cast_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_float16;
+			n->op = Cast_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_float32;
+			n->op = Cast_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Cast_init;
 			n->exit = Cast_exit;
 			n->reshape = Cast_reshape;
-			n->operator = Cast_float64;
+			n->op = Cast_float64;
 			break;
 		default:
 			break;

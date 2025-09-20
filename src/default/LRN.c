@@ -210,25 +210,25 @@ void resolver_default_op_LRN(struct onnx_node_t * n)
 			n->init = LRN_init;
 			n->exit = LRN_exit;
 			n->reshape = LRN_reshape;
-			n->operator = LRN_bfloat16;
+			n->op = LRN_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = LRN_init;
 			n->exit = LRN_exit;
 			n->reshape = LRN_reshape;
-			n->operator = LRN_float16;
+			n->op = LRN_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = LRN_init;
 			n->exit = LRN_exit;
 			n->reshape = LRN_reshape;
-			n->operator = LRN_float32;
+			n->op = LRN_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = LRN_init;
 			n->exit = LRN_exit;
 			n->reshape = LRN_reshape;
-			n->operator = LRN_float64;
+			n->op = LRN_float64;
 			break;
 		default:
 			break;
@@ -242,19 +242,19 @@ void resolver_default_op_LRN(struct onnx_node_t * n)
 			n->init = LRN_init;
 			n->exit = LRN_exit;
 			n->reshape = LRN_reshape;
-			n->operator = LRN_float16;
+			n->op = LRN_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = LRN_init;
 			n->exit = LRN_exit;
 			n->reshape = LRN_reshape;
-			n->operator = LRN_float32;
+			n->op = LRN_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = LRN_init;
 			n->exit = LRN_exit;
 			n->reshape = LRN_reshape;
-			n->operator = LRN_float64;
+			n->op = LRN_float64;
 			break;
 		default:
 			break;

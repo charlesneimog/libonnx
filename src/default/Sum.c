@@ -121,25 +121,25 @@ void resolver_default_op_Sum(struct onnx_node_t * n)
 			n->init = Sum_init;
 			n->exit = Sum_exit;
 			n->reshape = Sum_reshape;
-			n->operator = Sum_bfloat16;
+			n->op = Sum_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Sum_init;
 			n->exit = Sum_exit;
 			n->reshape = Sum_reshape;
-			n->operator = Sum_float16;
+			n->op = Sum_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Sum_init;
 			n->exit = Sum_exit;
 			n->reshape = Sum_reshape;
-			n->operator = Sum_float32;
+			n->op = Sum_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Sum_init;
 			n->exit = Sum_exit;
 			n->reshape = Sum_reshape;
-			n->operator = Sum_float64;
+			n->op = Sum_float64;
 			break;
 		default:
 			break;
@@ -153,19 +153,19 @@ void resolver_default_op_Sum(struct onnx_node_t * n)
 			n->init = Sum_init;
 			n->exit = Sum_exit;
 			n->reshape = Sum_reshape;
-			n->operator = Sum_float16;
+			n->op = Sum_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Sum_init;
 			n->exit = Sum_exit;
 			n->reshape = Sum_reshape;
-			n->operator = Sum_float32;
+			n->op = Sum_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Sum_init;
 			n->exit = Sum_exit;
 			n->reshape = Sum_reshape;
-			n->operator = Sum_float64;
+			n->op = Sum_float64;
 			break;
 		default:
 			break;
@@ -179,19 +179,19 @@ void resolver_default_op_Sum(struct onnx_node_t * n)
 			n->init = Sum_init;
 			n->exit = Sum_exit;
 			n->reshape = Sum_reshape;
-			n->operator = Sum_float16;
+			n->op = Sum_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Sum_init;
 			n->exit = Sum_exit;
 			n->reshape = Sum_reshape;
-			n->operator = Sum_float32;
+			n->op = Sum_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Sum_init;
 			n->exit = Sum_exit;
 			n->reshape = Sum_reshape;
-			n->operator = Sum_float64;
+			n->op = Sum_float64;
 			break;
 		default:
 			break;
@@ -205,19 +205,19 @@ void resolver_default_op_Sum(struct onnx_node_t * n)
 			n->init = Sum_init;
 			n->exit = Sum_exit;
 			n->reshape = Sum_reshape;
-			n->operator = Sum_float16;
+			n->op = Sum_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Sum_init;
 			n->exit = Sum_exit;
 			n->reshape = Sum_reshape;
-			n->operator = Sum_float32;
+			n->op = Sum_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Sum_init;
 			n->exit = Sum_exit;
 			n->reshape = Sum_reshape;
-			n->operator = Sum_float64;
+			n->op = Sum_float64;
 			break;
 		default:
 			break;

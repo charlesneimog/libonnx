@@ -104,7 +104,7 @@ void resolver_default_op_Reshape(struct onnx_node_t * n)
 			n->init = Reshape_init;
 			n->exit = Reshape_exit;
 			n->reshape = Reshape_reshape;
-			n->operator = Reshape_operator;
+			n->op = Reshape_operator;
 			break;
 		default:
 			break;
@@ -133,7 +133,7 @@ void resolver_default_op_Reshape(struct onnx_node_t * n)
 			n->init = Reshape_init;
 			n->exit = Reshape_exit;
 			n->reshape = Reshape_reshape;
-			n->operator = Reshape_operator;
+			n->op = Reshape_operator;
 			break;
 		default:
 			break;
@@ -161,7 +161,7 @@ void resolver_default_op_Reshape(struct onnx_node_t * n)
 			n->init = Reshape_init;
 			n->exit = Reshape_exit;
 			n->reshape = Reshape_reshape;
-			n->operator = Reshape_operator;
+			n->op = Reshape_operator;
 			break;
 		default:
 			break;

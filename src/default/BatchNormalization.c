@@ -152,19 +152,19 @@ void resolver_default_op_BatchNormalization(struct onnx_node_t * n)
 			n->init = BatchNormalization_init;
 			n->exit = BatchNormalization_exit;
 			n->reshape = BatchNormalization_reshape;
-			n->operator = BatchNormalization_float16;
+			n->op = BatchNormalization_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = BatchNormalization_init;
 			n->exit = BatchNormalization_exit;
 			n->reshape = BatchNormalization_reshape;
-			n->operator = BatchNormalization_float32;
+			n->op = BatchNormalization_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = BatchNormalization_init;
 			n->exit = BatchNormalization_exit;
 			n->reshape = BatchNormalization_reshape;
-			n->operator = BatchNormalization_float64;
+			n->op = BatchNormalization_float64;
 			break;
 		default:
 			break;
@@ -178,19 +178,19 @@ void resolver_default_op_BatchNormalization(struct onnx_node_t * n)
 			n->init = BatchNormalization_init;
 			n->exit = BatchNormalization_exit;
 			n->reshape = BatchNormalization_reshape;
-			n->operator = BatchNormalization_float16;
+			n->op = BatchNormalization_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = BatchNormalization_init;
 			n->exit = BatchNormalization_exit;
 			n->reshape = BatchNormalization_reshape;
-			n->operator = BatchNormalization_float32;
+			n->op = BatchNormalization_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = BatchNormalization_init;
 			n->exit = BatchNormalization_exit;
 			n->reshape = BatchNormalization_reshape;
-			n->operator = BatchNormalization_float64;
+			n->op = BatchNormalization_float64;
 			break;
 		default:
 			break;

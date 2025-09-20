@@ -105,7 +105,7 @@ void resolver_default_op_Flatten(struct onnx_node_t * n)
 			n->init = Flatten_init;
 			n->exit = Flatten_exit;
 			n->reshape = Flatten_reshape;
-			n->operator = Flatten_operator;
+			n->op = Flatten_operator;
 			break;
 		default:
 			break;
@@ -133,7 +133,7 @@ void resolver_default_op_Flatten(struct onnx_node_t * n)
 			n->init = Flatten_init;
 			n->exit = Flatten_exit;
 			n->reshape = Flatten_reshape;
-			n->operator = Flatten_operator;
+			n->op = Flatten_operator;
 			break;
 		default:
 			break;
@@ -161,7 +161,7 @@ void resolver_default_op_Flatten(struct onnx_node_t * n)
 			n->init = Flatten_init;
 			n->exit = Flatten_exit;
 			n->reshape = Flatten_reshape;
-			n->operator = Flatten_operator;
+			n->op = Flatten_operator;
 			break;
 		default:
 			break;
@@ -177,7 +177,7 @@ void resolver_default_op_Flatten(struct onnx_node_t * n)
 			n->init = Flatten_init;
 			n->exit = Flatten_exit;
 			n->reshape = Flatten_reshape;
-			n->operator = Flatten_operator;
+			n->op = Flatten_operator;
 			break;
 		default:
 			break;

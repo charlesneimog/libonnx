@@ -1134,19 +1134,19 @@ void resolver_default_op_Conv(struct onnx_node_t * n)
 			n->init = Conv_init;
 			n->exit = Conv_exit;
 			n->reshape = Conv_reshape;
-			n->operator = Conv_float16;
+			n->op = Conv_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Conv_init;
 			n->exit = Conv_exit;
 			n->reshape = Conv_reshape;
-			n->operator = Conv_float32;
+			n->op = Conv_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Conv_init;
 			n->exit = Conv_exit;
 			n->reshape = Conv_reshape;
-			n->operator = Conv_float64;
+			n->op = Conv_float64;
 			break;
 		default:
 			break;
@@ -1160,19 +1160,19 @@ void resolver_default_op_Conv(struct onnx_node_t * n)
 			n->init = Conv_init;
 			n->exit = Conv_exit;
 			n->reshape = Conv_reshape;
-			n->operator = Conv_float16;
+			n->op = Conv_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Conv_init;
 			n->exit = Conv_exit;
 			n->reshape = Conv_reshape;
-			n->operator = Conv_float32;
+			n->op = Conv_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Conv_init;
 			n->exit = Conv_exit;
 			n->reshape = Conv_reshape;
-			n->operator = Conv_float64;
+			n->op = Conv_float64;
 			break;
 		default:
 			break;

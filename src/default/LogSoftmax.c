@@ -386,25 +386,25 @@ void resolver_default_op_LogSoftmax(struct onnx_node_t * n)
 			n->init = LogSoftmax_13_init;
 			n->exit = LogSoftmax_13_exit;
 			n->reshape = LogSoftmax_13_reshape;
-			n->operator = LogSoftmax_13_bfloat16;
+			n->op = LogSoftmax_13_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = LogSoftmax_13_init;
 			n->exit = LogSoftmax_13_exit;
 			n->reshape = LogSoftmax_13_reshape;
-			n->operator = LogSoftmax_13_float16;
+			n->op = LogSoftmax_13_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = LogSoftmax_13_init;
 			n->exit = LogSoftmax_13_exit;
 			n->reshape = LogSoftmax_13_reshape;
-			n->operator = LogSoftmax_13_float32;
+			n->op = LogSoftmax_13_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = LogSoftmax_13_init;
 			n->exit = LogSoftmax_13_exit;
 			n->reshape = LogSoftmax_13_reshape;
-			n->operator = LogSoftmax_13_float64;
+			n->op = LogSoftmax_13_float64;
 			break;
 		default:
 			break;
@@ -418,19 +418,19 @@ void resolver_default_op_LogSoftmax(struct onnx_node_t * n)
 			n->init = LogSoftmax_1_11_init;
 			n->exit = LogSoftmax_1_11_exit;
 			n->reshape = LogSoftmax_1_11_reshape;
-			n->operator = LogSoftmax_1_11_float16;
+			n->op = LogSoftmax_1_11_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = LogSoftmax_1_11_init;
 			n->exit = LogSoftmax_1_11_exit;
 			n->reshape = LogSoftmax_1_11_reshape;
-			n->operator = LogSoftmax_1_11_float32;
+			n->op = LogSoftmax_1_11_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = LogSoftmax_1_11_init;
 			n->exit = LogSoftmax_1_11_exit;
 			n->reshape = LogSoftmax_1_11_reshape;
-			n->operator = LogSoftmax_1_11_float64;
+			n->op = LogSoftmax_1_11_float64;
 			break;
 		default:
 			break;
@@ -444,19 +444,19 @@ void resolver_default_op_LogSoftmax(struct onnx_node_t * n)
 			n->init = LogSoftmax_1_11_init;
 			n->exit = LogSoftmax_1_11_exit;
 			n->reshape = LogSoftmax_1_11_reshape;
-			n->operator = LogSoftmax_1_11_float16;
+			n->op = LogSoftmax_1_11_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = LogSoftmax_1_11_init;
 			n->exit = LogSoftmax_1_11_exit;
 			n->reshape = LogSoftmax_1_11_reshape;
-			n->operator = LogSoftmax_1_11_float32;
+			n->op = LogSoftmax_1_11_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = LogSoftmax_1_11_init;
 			n->exit = LogSoftmax_1_11_exit;
 			n->reshape = LogSoftmax_1_11_reshape;
-			n->operator = LogSoftmax_1_11_float64;
+			n->op = LogSoftmax_1_11_float64;
 			break;
 		default:
 			break;

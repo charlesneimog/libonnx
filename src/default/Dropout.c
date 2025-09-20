@@ -74,25 +74,25 @@ void resolver_default_op_Dropout(struct onnx_node_t * n)
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_bfloat16;
+			n->op = Dropout_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float16;
+			n->op = Dropout_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float32;
+			n->op = Dropout_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float64;
+			n->op = Dropout_float64;
 			break;
 		default:
 			break;
@@ -106,19 +106,19 @@ void resolver_default_op_Dropout(struct onnx_node_t * n)
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float16;
+			n->op = Dropout_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float32;
+			n->op = Dropout_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float64;
+			n->op = Dropout_float64;
 			break;
 		default:
 			break;
@@ -132,19 +132,19 @@ void resolver_default_op_Dropout(struct onnx_node_t * n)
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float16;
+			n->op = Dropout_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float32;
+			n->op = Dropout_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float64;
+			n->op = Dropout_float64;
 			break;
 		default:
 			break;
@@ -158,19 +158,19 @@ void resolver_default_op_Dropout(struct onnx_node_t * n)
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float16;
+			n->op = Dropout_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float32;
+			n->op = Dropout_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float64;
+			n->op = Dropout_float64;
 			break;
 		default:
 			break;
@@ -184,19 +184,19 @@ void resolver_default_op_Dropout(struct onnx_node_t * n)
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float16;
+			n->op = Dropout_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float32;
+			n->op = Dropout_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float64;
+			n->op = Dropout_float64;
 			break;
 		default:
 			break;
@@ -210,19 +210,19 @@ void resolver_default_op_Dropout(struct onnx_node_t * n)
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float16;
+			n->op = Dropout_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float32;
+			n->op = Dropout_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Dropout_init;
 			n->exit = Dropout_exit;
 			n->reshape = Dropout_reshape;
-			n->operator = Dropout_float64;
+			n->op = Dropout_float64;
 			break;
 		default:
 			break;

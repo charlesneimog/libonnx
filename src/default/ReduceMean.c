@@ -655,61 +655,61 @@ void resolver_default_op_ReduceMean(struct onnx_node_t * n)
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_int8;
+			n->op = ReduceMean_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_int32;
+			n->op = ReduceMean_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_int64;
+			n->op = ReduceMean_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_uint8;
+			n->op = ReduceMean_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_uint32;
+			n->op = ReduceMean_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_uint64;
+			n->op = ReduceMean_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_BFLOAT16:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_bfloat16;
+			n->op = ReduceMean_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_float16;
+			n->op = ReduceMean_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_float32;
+			n->op = ReduceMean_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_float64;
+			n->op = ReduceMean_float64;
 			break;
 		default:
 			break;
@@ -723,55 +723,55 @@ void resolver_default_op_ReduceMean(struct onnx_node_t * n)
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_int8;
+			n->op = ReduceMean_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_int32;
+			n->op = ReduceMean_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_int64;
+			n->op = ReduceMean_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_uint8;
+			n->op = ReduceMean_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_uint32;
+			n->op = ReduceMean_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_uint64;
+			n->op = ReduceMean_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_float16;
+			n->op = ReduceMean_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_float32;
+			n->op = ReduceMean_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_float64;
+			n->op = ReduceMean_float64;
 			break;
 		default:
 			break;
@@ -785,55 +785,55 @@ void resolver_default_op_ReduceMean(struct onnx_node_t * n)
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_int8;
+			n->op = ReduceMean_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_int32;
+			n->op = ReduceMean_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_int64;
+			n->op = ReduceMean_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_uint8;
+			n->op = ReduceMean_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_uint32;
+			n->op = ReduceMean_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_uint64;
+			n->op = ReduceMean_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_float16;
+			n->op = ReduceMean_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_float32;
+			n->op = ReduceMean_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = ReduceMean_init;
 			n->exit = ReduceMean_exit;
 			n->reshape = ReduceMean_reshape;
-			n->operator = ReduceMean_float64;
+			n->op = ReduceMean_float64;
 			break;
 		default:
 			break;

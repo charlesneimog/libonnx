@@ -82,25 +82,25 @@ void resolver_default_op_Exp(struct onnx_node_t * n)
 			n->init = Exp_init;
 			n->exit = Exp_exit;
 			n->reshape = Exp_reshape;
-			n->operator = Exp_bfloat16;
+			n->op = Exp_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Exp_init;
 			n->exit = Exp_exit;
 			n->reshape = Exp_reshape;
-			n->operator = Exp_float16;
+			n->op = Exp_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Exp_init;
 			n->exit = Exp_exit;
 			n->reshape = Exp_reshape;
-			n->operator = Exp_float32;
+			n->op = Exp_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Exp_init;
 			n->exit = Exp_exit;
 			n->reshape = Exp_reshape;
-			n->operator = Exp_float64;
+			n->op = Exp_float64;
 			break;
 		default:
 			break;
@@ -114,19 +114,19 @@ void resolver_default_op_Exp(struct onnx_node_t * n)
 			n->init = Exp_init;
 			n->exit = Exp_exit;
 			n->reshape = Exp_reshape;
-			n->operator = Exp_float16;
+			n->op = Exp_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Exp_init;
 			n->exit = Exp_exit;
 			n->reshape = Exp_reshape;
-			n->operator = Exp_float32;
+			n->op = Exp_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Exp_init;
 			n->exit = Exp_exit;
 			n->reshape = Exp_reshape;
-			n->operator = Exp_float64;
+			n->op = Exp_float64;
 			break;
 		default:
 			break;
@@ -140,19 +140,19 @@ void resolver_default_op_Exp(struct onnx_node_t * n)
 			n->init = Exp_init;
 			n->exit = Exp_exit;
 			n->reshape = Exp_reshape;
-			n->operator = Exp_float16;
+			n->op = Exp_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Exp_init;
 			n->exit = Exp_exit;
 			n->reshape = Exp_reshape;
-			n->operator = Exp_float32;
+			n->op = Exp_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Exp_init;
 			n->exit = Exp_exit;
 			n->reshape = Exp_reshape;
-			n->operator = Exp_float64;
+			n->op = Exp_float64;
 			break;
 		default:
 			break;

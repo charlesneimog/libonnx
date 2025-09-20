@@ -67,19 +67,19 @@ void resolver_default_op_Tan(struct onnx_node_t * n)
 			n->init = Tan_init;
 			n->exit = Tan_exit;
 			n->reshape = Tan_reshape;
-			n->operator = Tan_float16;
+			n->op = Tan_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Tan_init;
 			n->exit = Tan_exit;
 			n->reshape = Tan_reshape;
-			n->operator = Tan_float32;
+			n->op = Tan_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Tan_init;
 			n->exit = Tan_exit;
 			n->reshape = Tan_reshape;
-			n->operator = Tan_float64;
+			n->op = Tan_float64;
 			break;
 		default:
 			break;

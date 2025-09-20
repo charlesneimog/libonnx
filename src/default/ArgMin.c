@@ -669,73 +669,73 @@ void resolver_default_op_ArgMin(struct onnx_node_t * n)
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_int8;
+			n->op = ArgMin_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT16:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_int16;
+			n->op = ArgMin_int16;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_int32;
+			n->op = ArgMin_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_int64;
+			n->op = ArgMin_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_uint8;
+			n->op = ArgMin_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT16:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_uint16;
+			n->op = ArgMin_uint16;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_uint32;
+			n->op = ArgMin_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_uint64;
+			n->op = ArgMin_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_BFLOAT16:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_bfloat16;
+			n->op = ArgMin_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_float16;
+			n->op = ArgMin_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_float32;
+			n->op = ArgMin_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_float64;
+			n->op = ArgMin_float64;
 			break;
 		default:
 			break;
@@ -749,67 +749,67 @@ void resolver_default_op_ArgMin(struct onnx_node_t * n)
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_int8;
+			n->op = ArgMin_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT16:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_int16;
+			n->op = ArgMin_int16;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_int32;
+			n->op = ArgMin_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_int64;
+			n->op = ArgMin_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_uint8;
+			n->op = ArgMin_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT16:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_uint16;
+			n->op = ArgMin_uint16;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_uint32;
+			n->op = ArgMin_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_uint64;
+			n->op = ArgMin_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_float16;
+			n->op = ArgMin_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_float32;
+			n->op = ArgMin_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_float64;
+			n->op = ArgMin_float64;
 			break;
 		default:
 			break;
@@ -823,67 +823,67 @@ void resolver_default_op_ArgMin(struct onnx_node_t * n)
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_int8;
+			n->op = ArgMin_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT16:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_int16;
+			n->op = ArgMin_int16;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_int32;
+			n->op = ArgMin_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_int64;
+			n->op = ArgMin_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_uint8;
+			n->op = ArgMin_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT16:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_uint16;
+			n->op = ArgMin_uint16;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_uint32;
+			n->op = ArgMin_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_uint64;
+			n->op = ArgMin_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_float16;
+			n->op = ArgMin_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_float32;
+			n->op = ArgMin_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_float64;
+			n->op = ArgMin_float64;
 			break;
 		default:
 			break;
@@ -897,67 +897,67 @@ void resolver_default_op_ArgMin(struct onnx_node_t * n)
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_int8;
+			n->op = ArgMin_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT16:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_int16;
+			n->op = ArgMin_int16;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_int32;
+			n->op = ArgMin_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_int64;
+			n->op = ArgMin_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_uint8;
+			n->op = ArgMin_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT16:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_uint16;
+			n->op = ArgMin_uint16;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_uint32;
+			n->op = ArgMin_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_uint64;
+			n->op = ArgMin_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_float16;
+			n->op = ArgMin_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_float32;
+			n->op = ArgMin_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = ArgMin_init;
 			n->exit = ArgMin_exit;
 			n->reshape = ArgMin_reshape;
-			n->operator = ArgMin_float64;
+			n->op = ArgMin_float64;
 			break;
 		default:
 			break;

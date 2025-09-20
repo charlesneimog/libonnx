@@ -86,25 +86,25 @@ void resolver_default_op_Acosh(struct onnx_node_t * n)
 			n->init = Acosh_init;
 			n->exit = Acosh_exit;
 			n->reshape = Acosh_reshape;
-			n->operator = Acosh_bfloat16;
+			n->op = Acosh_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Acosh_init;
 			n->exit = Acosh_exit;
 			n->reshape = Acosh_reshape;
-			n->operator = Acosh_float16;
+			n->op = Acosh_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Acosh_init;
 			n->exit = Acosh_exit;
 			n->reshape = Acosh_reshape;
-			n->operator = Acosh_float32;
+			n->op = Acosh_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Acosh_init;
 			n->exit = Acosh_exit;
 			n->reshape = Acosh_reshape;
-			n->operator = Acosh_float64;
+			n->op = Acosh_float64;
 			break;
 		default:
 			break;
@@ -118,19 +118,19 @@ void resolver_default_op_Acosh(struct onnx_node_t * n)
 			n->init = Acosh_init;
 			n->exit = Acosh_exit;
 			n->reshape = Acosh_reshape;
-			n->operator = Acosh_float16;
+			n->op = Acosh_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Acosh_init;
 			n->exit = Acosh_exit;
 			n->reshape = Acosh_reshape;
-			n->operator = Acosh_float32;
+			n->op = Acosh_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Acosh_init;
 			n->exit = Acosh_exit;
 			n->reshape = Acosh_reshape;
-			n->operator = Acosh_float64;
+			n->op = Acosh_float64;
 			break;
 		default:
 			break;

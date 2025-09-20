@@ -101,6 +101,6 @@ void resolver_default_op_RandomUniformLike(struct onnx_node_t * n)
 		n->init = RandomUniformLike_init;
 		n->exit = RandomUniformLike_exit;
 		n->reshape = RandomUniformLike_reshape;
-		n->operator = RandomUniformLike_operator;
+		n->op = RandomUniformLike_operator;
 	}
 }

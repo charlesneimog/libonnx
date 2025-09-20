@@ -82,25 +82,25 @@ void resolver_default_op_Asin(struct onnx_node_t * n)
 			n->init = Asin_init;
 			n->exit = Asin_exit;
 			n->reshape = Asin_reshape;
-			n->operator = Asin_bfloat16;
+			n->op = Asin_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Asin_init;
 			n->exit = Asin_exit;
 			n->reshape = Asin_reshape;
-			n->operator = Asin_float16;
+			n->op = Asin_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Asin_init;
 			n->exit = Asin_exit;
 			n->reshape = Asin_reshape;
-			n->operator = Asin_float32;
+			n->op = Asin_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Asin_init;
 			n->exit = Asin_exit;
 			n->reshape = Asin_reshape;
-			n->operator = Asin_float64;
+			n->op = Asin_float64;
 			break;
 		default:
 			break;
@@ -114,19 +114,19 @@ void resolver_default_op_Asin(struct onnx_node_t * n)
 			n->init = Asin_init;
 			n->exit = Asin_exit;
 			n->reshape = Asin_reshape;
-			n->operator = Asin_float16;
+			n->op = Asin_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Asin_init;
 			n->exit = Asin_exit;
 			n->reshape = Asin_reshape;
-			n->operator = Asin_float32;
+			n->op = Asin_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Asin_init;
 			n->exit = Asin_exit;
 			n->reshape = Asin_reshape;
-			n->operator = Asin_float64;
+			n->op = Asin_float64;
 			break;
 		default:
 			break;

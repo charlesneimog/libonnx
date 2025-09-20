@@ -260,19 +260,19 @@ void resolver_default_op_Multinomial(struct onnx_node_t * n)
 			n->init = Multinomial_init;
 			n->exit = Multinomial_exit;
 			n->reshape = Multinomial_reshape;
-			n->operator = Multinomial_float16;
+			n->op = Multinomial_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Multinomial_init;
 			n->exit = Multinomial_exit;
 			n->reshape = Multinomial_reshape;
-			n->operator = Multinomial_float32;
+			n->op = Multinomial_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Multinomial_init;
 			n->exit = Multinomial_exit;
 			n->reshape = Multinomial_reshape;
-			n->operator = Multinomial_float64;
+			n->op = Multinomial_float64;
 			break;
 		default:
 			break;

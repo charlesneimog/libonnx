@@ -167,49 +167,49 @@ void resolver_default_op_BitwiseXor(struct onnx_node_t * n)
 			n->init = BitwiseXor_init;
 			n->exit = BitwiseXor_exit;
 			n->reshape = BitwiseXor_reshape;
-			n->operator = BitwiseXor_int8;
+			n->op = BitwiseXor_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT16:
 			n->init = BitwiseXor_init;
 			n->exit = BitwiseXor_exit;
 			n->reshape = BitwiseXor_reshape;
-			n->operator = BitwiseXor_int16;
+			n->op = BitwiseXor_int16;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = BitwiseXor_init;
 			n->exit = BitwiseXor_exit;
 			n->reshape = BitwiseXor_reshape;
-			n->operator = BitwiseXor_int32;
+			n->op = BitwiseXor_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = BitwiseXor_init;
 			n->exit = BitwiseXor_exit;
 			n->reshape = BitwiseXor_reshape;
-			n->operator = BitwiseXor_int64;
+			n->op = BitwiseXor_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = BitwiseXor_init;
 			n->exit = BitwiseXor_exit;
 			n->reshape = BitwiseXor_reshape;
-			n->operator = BitwiseXor_uint8;
+			n->op = BitwiseXor_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT16:
 			n->init = BitwiseXor_init;
 			n->exit = BitwiseXor_exit;
 			n->reshape = BitwiseXor_reshape;
-			n->operator = BitwiseXor_uint16;
+			n->op = BitwiseXor_uint16;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = BitwiseXor_init;
 			n->exit = BitwiseXor_exit;
 			n->reshape = BitwiseXor_reshape;
-			n->operator = BitwiseXor_uint32;
+			n->op = BitwiseXor_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = BitwiseXor_init;
 			n->exit = BitwiseXor_exit;
 			n->reshape = BitwiseXor_reshape;
-			n->operator = BitwiseXor_uint64;
+			n->op = BitwiseXor_uint64;
 			break;
 		default:
 			break;

@@ -48,7 +48,7 @@ void resolver_default_op_And(struct onnx_node_t * n)
 			n->init = And_7_init;
 			n->exit = And_7_exit;
 			n->reshape = And_7_reshape;
-			n->operator = And_7_bool;
+			n->op = And_7_bool;
 			break;
 		default:
 			break;

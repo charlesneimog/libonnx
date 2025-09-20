@@ -197,37 +197,37 @@ void resolver_default_op_Pow(struct onnx_node_t * n)
 			n->init = Pow_init;
 			n->exit = Pow_exit;
 			n->reshape = Pow_reshape;
-			n->operator = Pow_int32;
+			n->op = Pow_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = Pow_init;
 			n->exit = Pow_exit;
 			n->reshape = Pow_reshape;
-			n->operator = Pow_int64;
+			n->op = Pow_int64;
 			break;
 		case ONNX_TENSOR_TYPE_BFLOAT16:
 			n->init = Pow_init;
 			n->exit = Pow_exit;
 			n->reshape = Pow_reshape;
-			n->operator = Pow_bfloat16;
+			n->op = Pow_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Pow_init;
 			n->exit = Pow_exit;
 			n->reshape = Pow_reshape;
-			n->operator = Pow_float16;
+			n->op = Pow_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Pow_init;
 			n->exit = Pow_exit;
 			n->reshape = Pow_reshape;
-			n->operator = Pow_float32;
+			n->op = Pow_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Pow_init;
 			n->exit = Pow_exit;
 			n->reshape = Pow_reshape;
-			n->operator = Pow_float64;
+			n->op = Pow_float64;
 			break;
 		default:
 			break;
@@ -241,31 +241,31 @@ void resolver_default_op_Pow(struct onnx_node_t * n)
 			n->init = Pow_init;
 			n->exit = Pow_exit;
 			n->reshape = Pow_reshape;
-			n->operator = Pow_int32;
+			n->op = Pow_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = Pow_init;
 			n->exit = Pow_exit;
 			n->reshape = Pow_reshape;
-			n->operator = Pow_int64;
+			n->op = Pow_int64;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Pow_init;
 			n->exit = Pow_exit;
 			n->reshape = Pow_reshape;
-			n->operator = Pow_float16;
+			n->op = Pow_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Pow_init;
 			n->exit = Pow_exit;
 			n->reshape = Pow_reshape;
-			n->operator = Pow_float32;
+			n->op = Pow_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Pow_init;
 			n->exit = Pow_exit;
 			n->reshape = Pow_reshape;
-			n->operator = Pow_float64;
+			n->op = Pow_float64;
 			break;
 		default:
 			break;
@@ -279,19 +279,19 @@ void resolver_default_op_Pow(struct onnx_node_t * n)
 			n->init = Pow_init;
 			n->exit = Pow_exit;
 			n->reshape = Pow_reshape;
-			n->operator = Pow_float16;
+			n->op = Pow_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Pow_init;
 			n->exit = Pow_exit;
 			n->reshape = Pow_reshape;
-			n->operator = Pow_float32;
+			n->op = Pow_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Pow_init;
 			n->exit = Pow_exit;
 			n->reshape = Pow_reshape;
-			n->operator = Pow_float64;
+			n->op = Pow_float64;
 			break;
 		default:
 			break;

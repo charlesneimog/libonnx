@@ -265,97 +265,97 @@ void resolver_default_op_Tile(struct onnx_node_t * n)
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_bool;
+			n->op = Tile_bool;
 			break;
 		case ONNX_TENSOR_TYPE_INT8:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_int8;
+			n->op = Tile_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT16:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_int16;
+			n->op = Tile_int16;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_int32;
+			n->op = Tile_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_int64;
+			n->op = Tile_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_uint8;
+			n->op = Tile_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT16:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_uint16;
+			n->op = Tile_uint16;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_uint32;
+			n->op = Tile_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_uint64;
+			n->op = Tile_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_BFLOAT16:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_bfloat16;
+			n->op = Tile_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_float16;
+			n->op = Tile_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_float32;
+			n->op = Tile_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_float64;
+			n->op = Tile_float64;
 			break;
 		case ONNX_TENSOR_TYPE_COMPLEX64:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_complex64;
+			n->op = Tile_complex64;
 			break;
 		case ONNX_TENSOR_TYPE_COMPLEX128:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_complex128;
+			n->op = Tile_complex128;
 			break;
 		case ONNX_TENSOR_TYPE_STRING:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_string;
+			n->op = Tile_string;
 			break;
 		default:
 			break;
@@ -369,91 +369,91 @@ void resolver_default_op_Tile(struct onnx_node_t * n)
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_bool;
+			n->op = Tile_bool;
 			break;
 		case ONNX_TENSOR_TYPE_INT8:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_int8;
+			n->op = Tile_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT16:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_int16;
+			n->op = Tile_int16;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_int32;
+			n->op = Tile_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_int64;
+			n->op = Tile_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_uint8;
+			n->op = Tile_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT16:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_uint16;
+			n->op = Tile_uint16;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_uint32;
+			n->op = Tile_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_uint64;
+			n->op = Tile_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_float16;
+			n->op = Tile_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_float32;
+			n->op = Tile_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_float64;
+			n->op = Tile_float64;
 			break;
 		case ONNX_TENSOR_TYPE_COMPLEX64:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_complex64;
+			n->op = Tile_complex64;
 			break;
 		case ONNX_TENSOR_TYPE_COMPLEX128:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_complex128;
+			n->op = Tile_complex128;
 			break;
 		case ONNX_TENSOR_TYPE_STRING:
 			n->init = Tile_init;
 			n->exit = Tile_exit;
 			n->reshape = Tile_reshape;
-			n->operator = Tile_string;
+			n->op = Tile_string;
 			break;
 		default:
 			break;

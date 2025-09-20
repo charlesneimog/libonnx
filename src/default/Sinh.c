@@ -67,19 +67,19 @@ void resolver_default_op_Sinh(struct onnx_node_t * n)
 			n->init = Sinh_init;
 			n->exit = Sinh_exit;
 			n->reshape = Sinh_reshape;
-			n->operator = Sinh_float16;
+			n->op = Sinh_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Sinh_init;
 			n->exit = Sinh_exit;
 			n->reshape = Sinh_reshape;
-			n->operator = Sinh_float32;
+			n->op = Sinh_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Sinh_init;
 			n->exit = Sinh_exit;
 			n->reshape = Sinh_reshape;
-			n->operator = Sinh_float64;
+			n->op = Sinh_float64;
 			break;
 		default:
 			break;

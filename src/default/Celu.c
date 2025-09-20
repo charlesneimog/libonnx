@@ -60,7 +60,7 @@ void resolver_default_op_Celu(struct onnx_node_t * n)
 			n->init = Celu_init;
 			n->exit = Celu_exit;
 			n->reshape = Celu_reshape;
-			n->operator = Celu_float32;
+			n->op = Celu_float32;
 			break;
 		default:
 			break;

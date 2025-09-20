@@ -635,61 +635,61 @@ void resolver_default_op_ReduceProd(struct onnx_node_t * n)
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_int8;
+			n->op = ReduceProd_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_int32;
+			n->op = ReduceProd_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_int64;
+			n->op = ReduceProd_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_uint8;
+			n->op = ReduceProd_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_uint32;
+			n->op = ReduceProd_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_uint64;
+			n->op = ReduceProd_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_BFLOAT16:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_bfloat16;
+			n->op = ReduceProd_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_float16;
+			n->op = ReduceProd_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_float32;
+			n->op = ReduceProd_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_float64;
+			n->op = ReduceProd_float64;
 			break;
 		default:
 			break;
@@ -703,55 +703,55 @@ void resolver_default_op_ReduceProd(struct onnx_node_t * n)
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_int8;
+			n->op = ReduceProd_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_int32;
+			n->op = ReduceProd_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_int64;
+			n->op = ReduceProd_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_uint8;
+			n->op = ReduceProd_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_uint32;
+			n->op = ReduceProd_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_uint64;
+			n->op = ReduceProd_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_float16;
+			n->op = ReduceProd_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_float32;
+			n->op = ReduceProd_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_float64;
+			n->op = ReduceProd_float64;
 			break;
 		default:
 			break;
@@ -765,55 +765,55 @@ void resolver_default_op_ReduceProd(struct onnx_node_t * n)
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_int8;
+			n->op = ReduceProd_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_int32;
+			n->op = ReduceProd_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_int64;
+			n->op = ReduceProd_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_uint8;
+			n->op = ReduceProd_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_uint32;
+			n->op = ReduceProd_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_uint64;
+			n->op = ReduceProd_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_float16;
+			n->op = ReduceProd_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_float32;
+			n->op = ReduceProd_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = ReduceProd_init;
 			n->exit = ReduceProd_exit;
 			n->reshape = ReduceProd_reshape;
-			n->operator = ReduceProd_float64;
+			n->op = ReduceProd_float64;
 			break;
 		default:
 			break;

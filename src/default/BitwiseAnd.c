@@ -167,49 +167,49 @@ void resolver_default_op_BitwiseAnd(struct onnx_node_t * n)
 			n->init = BitwiseAnd_init;
 			n->exit = BitwiseAnd_exit;
 			n->reshape = BitwiseAnd_reshape;
-			n->operator = BitwiseAnd_int8;
+			n->op = BitwiseAnd_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT16:
 			n->init = BitwiseAnd_init;
 			n->exit = BitwiseAnd_exit;
 			n->reshape = BitwiseAnd_reshape;
-			n->operator = BitwiseAnd_int16;
+			n->op = BitwiseAnd_int16;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = BitwiseAnd_init;
 			n->exit = BitwiseAnd_exit;
 			n->reshape = BitwiseAnd_reshape;
-			n->operator = BitwiseAnd_int32;
+			n->op = BitwiseAnd_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = BitwiseAnd_init;
 			n->exit = BitwiseAnd_exit;
 			n->reshape = BitwiseAnd_reshape;
-			n->operator = BitwiseAnd_int64;
+			n->op = BitwiseAnd_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = BitwiseAnd_init;
 			n->exit = BitwiseAnd_exit;
 			n->reshape = BitwiseAnd_reshape;
-			n->operator = BitwiseAnd_uint8;
+			n->op = BitwiseAnd_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT16:
 			n->init = BitwiseAnd_init;
 			n->exit = BitwiseAnd_exit;
 			n->reshape = BitwiseAnd_reshape;
-			n->operator = BitwiseAnd_uint16;
+			n->op = BitwiseAnd_uint16;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = BitwiseAnd_init;
 			n->exit = BitwiseAnd_exit;
 			n->reshape = BitwiseAnd_reshape;
-			n->operator = BitwiseAnd_uint32;
+			n->op = BitwiseAnd_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = BitwiseAnd_init;
 			n->exit = BitwiseAnd_exit;
 			n->reshape = BitwiseAnd_reshape;
-			n->operator = BitwiseAnd_uint64;
+			n->op = BitwiseAnd_uint64;
 			break;
 		default:
 			break;

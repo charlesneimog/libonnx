@@ -48,7 +48,7 @@ void resolver_default_op_Xor(struct onnx_node_t * n)
 			n->init = Xor_init;
 			n->exit = Xor_exit;
 			n->reshape = Xor_reshape;
-			n->operator = Xor_bool;
+			n->op = Xor_bool;
 			break;
 		default:
 			break;

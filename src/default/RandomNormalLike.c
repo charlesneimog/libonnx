@@ -116,6 +116,6 @@ void resolver_default_op_RandomNormalLike(struct onnx_node_t * n)
 		n->init = RandomNormalLike_init;
 		n->exit = RandomNormalLike_exit;
 		n->reshape = RandomNormalLike_reshape;
-		n->operator = RandomNormalLike_operator;
+		n->op = RandomNormalLike_operator;
 	}
 }

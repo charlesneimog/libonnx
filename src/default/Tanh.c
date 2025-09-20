@@ -82,25 +82,25 @@ void resolver_default_op_Tanh(struct onnx_node_t * n)
 			n->init = Tanh_init;
 			n->exit = Tanh_exit;
 			n->reshape = Tanh_reshape;
-			n->operator = Tanh_bfloat16;
+			n->op = Tanh_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Tanh_init;
 			n->exit = Tanh_exit;
 			n->reshape = Tanh_reshape;
-			n->operator = Tanh_float16;
+			n->op = Tanh_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Tanh_init;
 			n->exit = Tanh_exit;
 			n->reshape = Tanh_reshape;
-			n->operator = Tanh_float32;
+			n->op = Tanh_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Tanh_init;
 			n->exit = Tanh_exit;
 			n->reshape = Tanh_reshape;
-			n->operator = Tanh_float64;
+			n->op = Tanh_float64;
 			break;
 		default:
 			break;
@@ -114,19 +114,19 @@ void resolver_default_op_Tanh(struct onnx_node_t * n)
 			n->init = Tanh_init;
 			n->exit = Tanh_exit;
 			n->reshape = Tanh_reshape;
-			n->operator = Tanh_float16;
+			n->op = Tanh_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Tanh_init;
 			n->exit = Tanh_exit;
 			n->reshape = Tanh_reshape;
-			n->operator = Tanh_float32;
+			n->op = Tanh_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Tanh_init;
 			n->exit = Tanh_exit;
 			n->reshape = Tanh_reshape;
-			n->operator = Tanh_float64;
+			n->op = Tanh_float64;
 			break;
 		default:
 			break;
@@ -140,19 +140,19 @@ void resolver_default_op_Tanh(struct onnx_node_t * n)
 			n->init = Tanh_init;
 			n->exit = Tanh_exit;
 			n->reshape = Tanh_reshape;
-			n->operator = Tanh_float16;
+			n->op = Tanh_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Tanh_init;
 			n->exit = Tanh_exit;
 			n->reshape = Tanh_reshape;
-			n->operator = Tanh_float32;
+			n->op = Tanh_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Tanh_init;
 			n->exit = Tanh_exit;
 			n->reshape = Tanh_reshape;
-			n->operator = Tanh_float64;
+			n->op = Tanh_float64;
 			break;
 		default:
 			break;

@@ -90,19 +90,19 @@ void resolver_default_op_LeakyRelu(struct onnx_node_t * n)
 			n->init = LeakyRelu_init;
 			n->exit = LeakyRelu_exit;
 			n->reshape = LeakyRelu_reshape;
-			n->operator = LeakyRelu_float16;
+			n->op = LeakyRelu_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = LeakyRelu_init;
 			n->exit = LeakyRelu_exit;
 			n->reshape = LeakyRelu_reshape;
-			n->operator = LeakyRelu_float32;
+			n->op = LeakyRelu_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = LeakyRelu_init;
 			n->exit = LeakyRelu_exit;
 			n->reshape = LeakyRelu_reshape;
-			n->operator = LeakyRelu_float64;
+			n->op = LeakyRelu_float64;
 			break;
 		default:
 			break;
@@ -116,19 +116,19 @@ void resolver_default_op_LeakyRelu(struct onnx_node_t * n)
 			n->init = LeakyRelu_init;
 			n->exit = LeakyRelu_exit;
 			n->reshape = LeakyRelu_reshape;
-			n->operator = LeakyRelu_float16;
+			n->op = LeakyRelu_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = LeakyRelu_init;
 			n->exit = LeakyRelu_exit;
 			n->reshape = LeakyRelu_reshape;
-			n->operator = LeakyRelu_float32;
+			n->op = LeakyRelu_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = LeakyRelu_init;
 			n->exit = LeakyRelu_exit;
 			n->reshape = LeakyRelu_reshape;
-			n->operator = LeakyRelu_float64;
+			n->op = LeakyRelu_float64;
 			break;
 		default:
 			break;

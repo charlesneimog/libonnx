@@ -165,6 +165,6 @@ void resolver_default_op_ConstantOfShape(struct onnx_node_t * n)
 		n->init = ConstantOfShape_init;
 		n->exit = ConstantOfShape_exit;
 		n->reshape = ConstantOfShape_reshape;
-		n->operator = ConstantOfShape_operator;
+		n->op = ConstantOfShape_operator;
 	}
 }

@@ -107,7 +107,7 @@ void resolver_default_op_Squeeze(struct onnx_node_t * n)
 			n->init = Squeeze_init;
 			n->exit = Squeeze_exit;
 			n->reshape = Squeeze_reshape;
-			n->operator = Squeeze_operator;
+			n->op = Squeeze_operator;
 			break;
 		default:
 			break;

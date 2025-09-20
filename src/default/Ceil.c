@@ -82,25 +82,25 @@ void resolver_default_op_Ceil(struct onnx_node_t * n)
 			n->init = Ceil_init;
 			n->exit = Ceil_exit;
 			n->reshape = Ceil_reshape;
-			n->operator = Ceil_bfloat16;
+			n->op = Ceil_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Ceil_init;
 			n->exit = Ceil_exit;
 			n->reshape = Ceil_reshape;
-			n->operator = Ceil_float16;
+			n->op = Ceil_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Ceil_init;
 			n->exit = Ceil_exit;
 			n->reshape = Ceil_reshape;
-			n->operator = Ceil_float32;
+			n->op = Ceil_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Ceil_init;
 			n->exit = Ceil_exit;
 			n->reshape = Ceil_reshape;
-			n->operator = Ceil_float64;
+			n->op = Ceil_float64;
 			break;
 		default:
 			break;
@@ -114,19 +114,19 @@ void resolver_default_op_Ceil(struct onnx_node_t * n)
 			n->init = Ceil_init;
 			n->exit = Ceil_exit;
 			n->reshape = Ceil_reshape;
-			n->operator = Ceil_float16;
+			n->op = Ceil_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Ceil_init;
 			n->exit = Ceil_exit;
 			n->reshape = Ceil_reshape;
-			n->operator = Ceil_float32;
+			n->op = Ceil_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Ceil_init;
 			n->exit = Ceil_exit;
 			n->reshape = Ceil_reshape;
-			n->operator = Ceil_float64;
+			n->op = Ceil_float64;
 			break;
 		default:
 			break;
@@ -140,19 +140,19 @@ void resolver_default_op_Ceil(struct onnx_node_t * n)
 			n->init = Ceil_init;
 			n->exit = Ceil_exit;
 			n->reshape = Ceil_reshape;
-			n->operator = Ceil_float16;
+			n->op = Ceil_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Ceil_init;
 			n->exit = Ceil_exit;
 			n->reshape = Ceil_reshape;
-			n->operator = Ceil_float32;
+			n->op = Ceil_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Ceil_init;
 			n->exit = Ceil_exit;
 			n->reshape = Ceil_reshape;
-			n->operator = Ceil_float64;
+			n->op = Ceil_float64;
 			break;
 		default:
 			break;

@@ -82,25 +82,25 @@ void resolver_default_op_Floor(struct onnx_node_t * n)
 			n->init = Floor_init;
 			n->exit = Floor_exit;
 			n->reshape = Floor_reshape;
-			n->operator = Floor_bfloat16;
+			n->op = Floor_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Floor_init;
 			n->exit = Floor_exit;
 			n->reshape = Floor_reshape;
-			n->operator = Floor_float16;
+			n->op = Floor_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Floor_init;
 			n->exit = Floor_exit;
 			n->reshape = Floor_reshape;
-			n->operator = Floor_float32;
+			n->op = Floor_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Floor_init;
 			n->exit = Floor_exit;
 			n->reshape = Floor_reshape;
-			n->operator = Floor_float64;
+			n->op = Floor_float64;
 			break;
 		default:
 			break;
@@ -114,19 +114,19 @@ void resolver_default_op_Floor(struct onnx_node_t * n)
 			n->init = Floor_init;
 			n->exit = Floor_exit;
 			n->reshape = Floor_reshape;
-			n->operator = Floor_float16;
+			n->op = Floor_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Floor_init;
 			n->exit = Floor_exit;
 			n->reshape = Floor_reshape;
-			n->operator = Floor_float32;
+			n->op = Floor_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Floor_init;
 			n->exit = Floor_exit;
 			n->reshape = Floor_reshape;
-			n->operator = Floor_float64;
+			n->op = Floor_float64;
 			break;
 		default:
 			break;
@@ -140,19 +140,19 @@ void resolver_default_op_Floor(struct onnx_node_t * n)
 			n->init = Floor_init;
 			n->exit = Floor_exit;
 			n->reshape = Floor_reshape;
-			n->operator = Floor_float16;
+			n->op = Floor_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Floor_init;
 			n->exit = Floor_exit;
 			n->reshape = Floor_reshape;
-			n->operator = Floor_float32;
+			n->op = Floor_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Floor_init;
 			n->exit = Floor_exit;
 			n->reshape = Floor_reshape;
-			n->operator = Floor_float64;
+			n->op = Floor_float64;
 			break;
 		default:
 			break;

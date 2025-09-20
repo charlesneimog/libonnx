@@ -156,7 +156,7 @@ void resolver_default_op_Concat(struct onnx_node_t * n)
 			n->init = Concat_init;
 			n->exit = Concat_exit;
 			n->reshape = Concat_reshape;
-			n->operator = Concat_operator;
+			n->op = Concat_operator;
 			break;
 		default:
 			break;
@@ -184,7 +184,7 @@ void resolver_default_op_Concat(struct onnx_node_t * n)
 			n->init = Concat_init;
 			n->exit = Concat_exit;
 			n->reshape = Concat_reshape;
-			n->operator = Concat_operator;
+			n->op = Concat_operator;
 			break;
 		default:
 			break;
@@ -212,7 +212,7 @@ void resolver_default_op_Concat(struct onnx_node_t * n)
 			n->init = Concat_init;
 			n->exit = Concat_exit;
 			n->reshape = Concat_reshape;
-			n->operator = Concat_operator;
+			n->op = Concat_operator;
 			break;
 		default:
 			break;
@@ -228,7 +228,7 @@ void resolver_default_op_Concat(struct onnx_node_t * n)
 			n->init = Concat_init;
 			n->exit = Concat_exit;
 			n->reshape = Concat_reshape;
-			n->operator = Concat_operator;
+			n->op = Concat_operator;
 			break;
 		default:
 			break;

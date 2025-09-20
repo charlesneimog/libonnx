@@ -48,7 +48,7 @@ void resolver_default_op_Or(struct onnx_node_t * n)
 			n->init = Or_init;
 			n->exit = Or_exit;
 			n->reshape = Or_reshape;
-			n->operator = Or_bool;
+			n->op = Or_bool;
 			break;
 		default:
 			break;

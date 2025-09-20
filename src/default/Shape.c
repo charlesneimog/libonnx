@@ -56,7 +56,7 @@ void resolver_default_op_Shape(struct onnx_node_t * n)
 			n->init = Shape_init;
 			n->exit = Shape_exit;
 			n->reshape = Shape_reshape;
-			n->operator = Shape_operator;
+			n->op = Shape_operator;
 			break;
 		default:
 			break;
@@ -84,7 +84,7 @@ void resolver_default_op_Shape(struct onnx_node_t * n)
 			n->init = Shape_init;
 			n->exit = Shape_exit;
 			n->reshape = Shape_reshape;
-			n->operator = Shape_operator;
+			n->op = Shape_operator;
 			break;
 		default:
 			break;

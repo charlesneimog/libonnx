@@ -252,79 +252,79 @@ void resolver_default_op_Equal(struct onnx_node_t * n)
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_bool;
+			n->op = Equal_bool;
 			break;
 		case ONNX_TENSOR_TYPE_INT8:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_int8;
+			n->op = Equal_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT16:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_int16;
+			n->op = Equal_int16;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_int32;
+			n->op = Equal_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_int64;
+			n->op = Equal_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_uint8;
+			n->op = Equal_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT16:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_uint16;
+			n->op = Equal_uint16;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_uint32;
+			n->op = Equal_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_uint64;
+			n->op = Equal_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_BFLOAT16:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_bfloat16;
+			n->op = Equal_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_float16;
+			n->op = Equal_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_float32;
+			n->op = Equal_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_float64;
+			n->op = Equal_float64;
 			break;
 		default:
 			break;
@@ -338,73 +338,73 @@ void resolver_default_op_Equal(struct onnx_node_t * n)
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_bool;
+			n->op = Equal_bool;
 			break;
 		case ONNX_TENSOR_TYPE_INT8:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_int8;
+			n->op = Equal_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT16:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_int16;
+			n->op = Equal_int16;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_int32;
+			n->op = Equal_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_int64;
+			n->op = Equal_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_uint8;
+			n->op = Equal_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT16:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_uint16;
+			n->op = Equal_uint16;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_uint32;
+			n->op = Equal_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_uint64;
+			n->op = Equal_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_float16;
+			n->op = Equal_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_float32;
+			n->op = Equal_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_float64;
+			n->op = Equal_float64;
 			break;
 		default:
 			break;
@@ -418,19 +418,19 @@ void resolver_default_op_Equal(struct onnx_node_t * n)
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_bool;
+			n->op = Equal_bool;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_int32;
+			n->op = Equal_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = Equal_init;
 			n->exit = Equal_exit;
 			n->reshape = Equal_reshape;
-			n->operator = Equal_int64;
+			n->op = Equal_int64;
 			break;
 		default:
 			break;

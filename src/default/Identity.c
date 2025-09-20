@@ -67,7 +67,7 @@ void resolver_default_op_Identity(struct onnx_node_t * n)
 			n->init = Identity_init;
 			n->exit = Identity_exit;
 			n->reshape = Identity_reshape;
-			n->operator = Identity_operator;
+			n->op = Identity_operator;
 			break;
 		default:
 			break;
@@ -96,7 +96,7 @@ void resolver_default_op_Identity(struct onnx_node_t * n)
 			n->init = Identity_init;
 			n->exit = Identity_exit;
 			n->reshape = Identity_reshape;
-			n->operator = Identity_operator;
+			n->op = Identity_operator;
 			break;
 		default:
 			break;
@@ -124,7 +124,7 @@ void resolver_default_op_Identity(struct onnx_node_t * n)
 			n->init = Identity_init;
 			n->exit = Identity_exit;
 			n->reshape = Identity_reshape;
-			n->operator = Identity_operator;
+			n->op = Identity_operator;
 			break;
 		default:
 			break;

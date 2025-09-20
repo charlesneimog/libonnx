@@ -105,6 +105,6 @@ void resolver_default_op_RandomUniform(struct onnx_node_t * n)
 		n->init = RandomUniform_init;
 		n->exit = RandomUniform_exit;
 		n->reshape = RandomUniform_reshape;
-		n->operator = RandomUniform_operator;
+		n->op = RandomUniform_operator;
 	}
 }

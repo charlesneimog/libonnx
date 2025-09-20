@@ -130,19 +130,19 @@ void resolver_default_op_GlobalAveragePool(struct onnx_node_t * n)
 			n->init = GlobalAveragePool_init;
 			n->exit = GlobalAveragePool_exit;
 			n->reshape = GlobalAveragePool_reshape;
-			n->operator = GlobalAveragePool_float16;
+			n->op = GlobalAveragePool_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = GlobalAveragePool_init;
 			n->exit = GlobalAveragePool_exit;
 			n->reshape = GlobalAveragePool_reshape;
-			n->operator = GlobalAveragePool_float32;
+			n->op = GlobalAveragePool_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = GlobalAveragePool_init;
 			n->exit = GlobalAveragePool_exit;
 			n->reshape = GlobalAveragePool_reshape;
-			n->operator = GlobalAveragePool_float64;
+			n->op = GlobalAveragePool_float64;
 			break;
 		default:
 			break;

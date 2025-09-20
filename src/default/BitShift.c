@@ -169,25 +169,25 @@ void resolver_default_op_BitShift(struct onnx_node_t * n)
 			n->init = BitShift_init;
 			n->exit = BitShift_exit;
 			n->reshape = BitShift_reshape;
-			n->operator = BitShift_uint8;
+			n->op = BitShift_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT16:
 			n->init = BitShift_init;
 			n->exit = BitShift_exit;
 			n->reshape = BitShift_reshape;
-			n->operator = BitShift_uint16;
+			n->op = BitShift_uint16;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = BitShift_init;
 			n->exit = BitShift_exit;
 			n->reshape = BitShift_reshape;
-			n->operator = BitShift_uint32;
+			n->op = BitShift_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = BitShift_init;
 			n->exit = BitShift_exit;
 			n->reshape = BitShift_reshape;
-			n->operator = BitShift_uint64;
+			n->op = BitShift_uint64;
 			break;
 		default:
 			break;

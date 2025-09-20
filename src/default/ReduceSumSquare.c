@@ -651,61 +651,61 @@ void resolver_default_op_ReduceSumSquare(struct onnx_node_t * n)
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_int8;
+			n->op = ReduceSumSquare_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_int32;
+			n->op = ReduceSumSquare_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_int64;
+			n->op = ReduceSumSquare_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_uint8;
+			n->op = ReduceSumSquare_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_uint32;
+			n->op = ReduceSumSquare_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_uint64;
+			n->op = ReduceSumSquare_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_BFLOAT16:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_bfloat16;
+			n->op = ReduceSumSquare_bfloat16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_float16;
+			n->op = ReduceSumSquare_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_float32;
+			n->op = ReduceSumSquare_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_float64;
+			n->op = ReduceSumSquare_float64;
 			break;
 		default:
 			break;
@@ -719,55 +719,55 @@ void resolver_default_op_ReduceSumSquare(struct onnx_node_t * n)
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_int8;
+			n->op = ReduceSumSquare_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_int32;
+			n->op = ReduceSumSquare_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_int64;
+			n->op = ReduceSumSquare_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_uint8;
+			n->op = ReduceSumSquare_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_uint32;
+			n->op = ReduceSumSquare_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_uint64;
+			n->op = ReduceSumSquare_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_float16;
+			n->op = ReduceSumSquare_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_float32;
+			n->op = ReduceSumSquare_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_float64;
+			n->op = ReduceSumSquare_float64;
 			break;
 		default:
 			break;
@@ -781,55 +781,55 @@ void resolver_default_op_ReduceSumSquare(struct onnx_node_t * n)
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_int8;
+			n->op = ReduceSumSquare_int8;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_int32;
+			n->op = ReduceSumSquare_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_int64;
+			n->op = ReduceSumSquare_int64;
 			break;
 		case ONNX_TENSOR_TYPE_UINT8:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_uint8;
+			n->op = ReduceSumSquare_uint8;
 			break;
 		case ONNX_TENSOR_TYPE_UINT32:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_uint32;
+			n->op = ReduceSumSquare_uint32;
 			break;
 		case ONNX_TENSOR_TYPE_UINT64:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_uint64;
+			n->op = ReduceSumSquare_uint64;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT16:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_float16;
+			n->op = ReduceSumSquare_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_float32;
+			n->op = ReduceSumSquare_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = ReduceSumSquare_init;
 			n->exit = ReduceSumSquare_exit;
 			n->reshape = ReduceSumSquare_reshape;
-			n->operator = ReduceSumSquare_float64;
+			n->op = ReduceSumSquare_float64;
 			break;
 		default:
 			break;

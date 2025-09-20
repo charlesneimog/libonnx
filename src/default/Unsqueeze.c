@@ -87,7 +87,7 @@ void resolver_default_op_Unsqueeze(struct onnx_node_t * n)
 			n->init = Unsqueeze_init;
 			n->exit = Unsqueeze_exit;
 			n->reshape = Unsqueeze_reshape;
-			n->operator = Unsqueeze_operator;
+			n->op = Unsqueeze_operator;
 			break;
 		default:
 			break;

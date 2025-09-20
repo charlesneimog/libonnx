@@ -111,19 +111,19 @@ void resolver_default_op_GlobalMaxPool(struct onnx_node_t * n)
 			n->init = GlobalMaxPool_init;
 			n->exit = GlobalMaxPool_exit;
 			n->reshape = GlobalMaxPool_reshape;
-			n->operator = GlobalMaxPool_float16;
+			n->op = GlobalMaxPool_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = GlobalMaxPool_init;
 			n->exit = GlobalMaxPool_exit;
 			n->reshape = GlobalMaxPool_reshape;
-			n->operator = GlobalMaxPool_float32;
+			n->op = GlobalMaxPool_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = GlobalMaxPool_init;
 			n->exit = GlobalMaxPool_exit;
 			n->reshape = GlobalMaxPool_reshape;
-			n->operator = GlobalMaxPool_float64;
+			n->op = GlobalMaxPool_float64;
 			break;
 		default:
 			break;

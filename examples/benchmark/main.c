@@ -115,7 +115,7 @@ static void onnx_run_benchmark(struct onnx_context_t * ctx, int count)
 		{
 			n = &ctx->g->nodes[i];
 			if(n->reshape(n))
-				n->operator(n);
+				n->op(n);
 		}
 		while(count-- > 0)
 		{
@@ -128,7 +128,7 @@ static void onnx_run_benchmark(struct onnx_context_t * ctx, int count)
 				p = profiler_search(m, name);
 				profiler_begin(p);
 				if(n->reshape(n))
-					n->operator(n);
+					n->op(n);
 				profiler_end(p);
 			}
 		}

@@ -159,31 +159,31 @@ void resolver_default_op_Range(struct onnx_node_t * n)
 			n->init = Range_init;
 			n->exit = Range_exit;
 			n->reshape = Range_reshape;
-			n->operator = Range_int16;
+			n->op = Range_int16;
 			break;
 		case ONNX_TENSOR_TYPE_INT32:
 			n->init = Range_init;
 			n->exit = Range_exit;
 			n->reshape = Range_reshape;
-			n->operator = Range_int32;
+			n->op = Range_int32;
 			break;
 		case ONNX_TENSOR_TYPE_INT64:
 			n->init = Range_init;
 			n->exit = Range_exit;
 			n->reshape = Range_reshape;
-			n->operator = Range_int64;
+			n->op = Range_int64;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Range_init;
 			n->exit = Range_exit;
 			n->reshape = Range_reshape;
-			n->operator = Range_float32;
+			n->op = Range_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Range_init;
 			n->exit = Range_exit;
 			n->reshape = Range_reshape;
-			n->operator = Range_float64;
+			n->op = Range_float64;
 			break;
 		default:
 			break;

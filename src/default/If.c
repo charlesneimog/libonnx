@@ -98,7 +98,7 @@ static void If_operator(struct onnx_node_t * n)
 		for(i = 0; i < g->nlen; i++)
 		{
 			t = &g->nodes[i];
-			t->operator(t);
+			t->op(t);
 		}
 		if(t)
 		{
@@ -133,20 +133,20 @@ void resolver_default_op_If(struct onnx_node_t * n)
 		n->init = If_init;
 		n->exit = If_exit;
 		n->reshape = If_reshape;
-		n->operator = If_operator;
+		n->op = If_operator;
 	}
 	else if(n->opset >= 11)
 	{
 		n->init = If_init;
 		n->exit = If_exit;
 		n->reshape = If_reshape;
-		n->operator = If_operator;
+		n->op = If_operator;
 	}
 	else if(n->opset >= 1)
 	{
 		n->init = If_init;
 		n->exit = If_exit;
 		n->reshape = If_reshape;
-		n->operator = If_operator;
+		n->op = If_operator;
 	}
 }

@@ -67,19 +67,19 @@ void resolver_default_op_Cosh(struct onnx_node_t * n)
 			n->init = Cosh_init;
 			n->exit = Cosh_exit;
 			n->reshape = Cosh_reshape;
-			n->operator = Cosh_float16;
+			n->op = Cosh_float16;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT32:
 			n->init = Cosh_init;
 			n->exit = Cosh_exit;
 			n->reshape = Cosh_reshape;
-			n->operator = Cosh_float32;
+			n->op = Cosh_float32;
 			break;
 		case ONNX_TENSOR_TYPE_FLOAT64:
 			n->init = Cosh_init;
 			n->exit = Cosh_exit;
 			n->reshape = Cosh_reshape;
-			n->operator = Cosh_float64;
+			n->op = Cosh_float64;
 			break;
 		default:
 			break;
