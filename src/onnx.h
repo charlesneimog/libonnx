@@ -283,6 +283,9 @@ struct onnx_resolver_t {
 	void (*op_Softsign)(struct onnx_node_t * n);
 	void (*op_Swish)(struct onnx_node_t * n);
 	void (*op_ThresholdedRelu)(struct onnx_node_t * n);
+
+    /* onnx.ai.ml */
+    void (*op_TreeEnsembleClassifier)(struct onnx_node_t * n);
 };
 
 struct onnx_context_t * onnx_context_alloc(const void * buf, size_t len, struct onnx_resolver_t ** r, int rlen);

@@ -1097,6 +1097,9 @@ static void resolver_solve_operator(struct onnx_resolver_t * r, struct onnx_node
 		case 0xa646ea33: /* "ThresholdedRelu" */
 			rop = r->op_ThresholdedRelu;
 			break;
+        case 0xc724f605: /* "TreeEnsembleClassifier" */
+            rop = r->op_TreeEnsembleClassifier;
+            break;
 
 		default:
 			rop = NULL;

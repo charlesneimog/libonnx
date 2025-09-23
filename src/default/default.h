@@ -196,6 +196,7 @@ void resolver_default_op_Softplus(struct onnx_node_t * n);
 void resolver_default_op_Softsign(struct onnx_node_t * n);
 void resolver_default_op_Swish(struct onnx_node_t * n);
 void resolver_default_op_ThresholdedRelu(struct onnx_node_t * n);
+void resolver_default_op_TreeEnsembleClassifier(struct onnx_node_t *n);
 
 extern struct onnx_resolver_t resolver_default;
 

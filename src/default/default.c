@@ -201,4 +201,5 @@ struct onnx_resolver_t resolver_default = {
 	.op_Softsign					= resolver_default_op_Softsign,
 	.op_Swish						= resolver_default_op_Swish,
 	.op_ThresholdedRelu				= resolver_default_op_ThresholdedRelu,
+    .op_TreeEnsembleClassifier      = resolver_default_op_TreeEnsembleClassifier,
 };
