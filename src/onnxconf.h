@@ -12,11 +12,15 @@ extern "C" {
 #include <string.h>
 #include <limits.h>
 #include <assert.h>
-#include <malloc.h>
 #include <float.h>
 #include <math.h>
 #include <list.h>
 #include <hmap.h>
+
+#ifndef __APPLE__
+#include <malloc.h>
+#endif
+
 
 #ifndef onnx_malloc
 #define onnx_malloc			malloc
