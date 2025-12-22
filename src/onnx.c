@@ -194,7 +194,11 @@ static struct onnx_tensor_t *onnx_tensor_alloc_from_value_info(Onnx__ValueInfoPr
     switch (v->type->value_case) {
     case ONNX__TYPE_PROTO__VALUE_TENSOR_TYPE:
         type = (enum onnx_tensor_type_t)v->type->tensor_type->elem_type;
-        ndim = v->type->tensor_type->shape->n_dim;
+        if (!v->type->tensor_type->shape) {
+            ndim = 0;
+        } else {
+            ndim = v->type->tensor_type->shape->n_dim;
+        }
         if (ndim > 0) {
             dims = onnx_malloc(sizeof(int) * ndim);
             if (dims) {
