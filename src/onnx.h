@@ -410,7 +410,7 @@ static inline int onnx_tensor_reshape_multi_broadcast(struct onnx_tensor_t *y,
 }
 
 static inline void *ptr_offset(void *ptr, size_t offset_bytes) {
-    return (void*)((char*)ptr + offset_bytes);
+    return (void *)((char *)ptr + offset_bytes);
 }
 
 static inline void *onnx_tensor_broadcast_map_address(struct onnx_tensor_t *x,
@@ -428,7 +428,8 @@ static inline void *onnx_tensor_broadcast_map_address(struct onnx_tensor_t *x,
         for (i = 0; i < xndim; i++) {
             ix[i] = iy[dndim + i] % x->dims[i];
         }
-        return ptr_offset(x->datas, onnx_tensor_indices_to_offset(x, ix) * onnx_tensor_type_sizeof(x->type));
+        return ptr_offset(x->datas,
+                          onnx_tensor_indices_to_offset(x, ix) * onnx_tensor_type_sizeof(x->type));
     }
     return x->datas;
 }
@@ -448,6 +449,7 @@ void onnx_tensor_dump(struct onnx_tensor_t *t, int detail);
 void onnx_node_dump(struct onnx_node_t *n, int detail);
 void onnx_graph_dump(struct onnx_graph_t *g, int detail);
 void onnx_context_dump(struct onnx_context_t *ctx, int detail);
+const char *onnx_metadata_get(struct onnx_context_t *ctx, const char *key);
 
 void onnx_run(struct onnx_context_t *ctx);
 

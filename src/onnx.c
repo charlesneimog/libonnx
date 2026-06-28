@@ -2036,6 +2036,28 @@ void onnx_graph_dump(struct onnx_graph_t *g, int detail) {
     }
 }
 
+const char *onnx_metadata_get(struct onnx_context_t *ctx, const char *key) {
+    size_t i;
+
+    if (!ctx || !ctx->model || !key) {
+        return NULL;
+    }
+
+    for (i = 0; i < ctx->model->n_metadata_props; i++) {
+        Onnx__StringStringEntryProto *entry = ctx->model->metadata_props[i];
+
+        if (!entry || !entry->key) {
+            continue;
+        }
+
+        if (strcmp(entry->key, key) == 0) {
+            return entry->value;
+        }
+    }
+
+    return NULL;
+}
+
 void onnx_context_dump(struct onnx_context_t *ctx, int detail) {
     int i;
 
