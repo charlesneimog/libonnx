@@ -6,7 +6,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 option(BUILD_TESTS "Build tests" ON)
 option(BUILD_EXAMPLES "Build examples" ON)
-option(LIBONNX_UPDATE_PROTO "Update Proto Language of ONNX" ON)
+option(LIBONNX_UPDATE_PROTO "Update Proto Language of ONNX" OFF)
 
 set(CPM_VERSION "0.42.1")
 set(ONNX_VERSION "v1.22.0")
