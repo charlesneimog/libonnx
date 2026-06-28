@@ -11,32 +11,37 @@ option(BUILD_EXAMPLES "Build examples" ON)
 # ╰──────────────────────────────────────╯
 set(CPM_FILE ${CMAKE_BINARY_DIR}/CPM.cmake)
 set(CPM_VERSION "0.42.1")
+set(ONNX_VERSION "v1.22.0")
+set(ONNX_PROTO_C "${CMAKE_BINARY_DIR}/onnx.proto3.pb-c.c")
+set(ONNX_PROTO_H "${CMAKE_BINARY_DIR}/onnx.proto3.pb-c.h")
+
 if(NOT EXISTS "${CPM_FILE}")
     file(DOWNLOAD "https://github.com/cpm-cmake/CPM.cmake/releases/download/v${CPM_VERSION}/CPM.cmake" ${CPM_FILE})
 endif()
 include(${CPM_FILE})
 
 cpmaddpackage("gh:protobuf-c/protobuf-c@1.5.2")
-
-set(ONNX_PROTO_FILE "${CMAKE_BINARY_DIR}/onnx.proto3")
-set(ONNX_PROTO_C "${CMAKE_BINARY_DIR}/onnx.proto3.pb-c.c")
-set(ONNX_PROTO_H "${CMAKE_BINARY_DIR}/onnx.proto3.pb-c.h")
-if(NOT EXISTS "${ONNX_PROTO_FILE}")
-    file(DOWNLOAD "https://raw.githubusercontent.com/onnx/onnx/refs/heads/main/onnx/onnx.proto3" "${ONNX_PROTO_FILE}")
-endif()
+cpmaddpackage(
+    NAME
+    onnx
+    URL
+    "https://github.com/onnx/onnx/archive/refs/tags/${ONNX_VERSION}.zip"
+    DOWNLOAD_ONLY
+    YES)
 
 find_program(PROTOC_EXECUTABLE protoc REQUIRED)
 find_program(PROTOC_GEN_C_EXECUTABLE protoc-gen-c REQUIRED)
 
+set(ONNX_PROTO_DIR "${onnx_SOURCE_DIR}/onnx")
+
 add_custom_command(
     OUTPUT "${ONNX_PROTO_C}" "${ONNX_PROTO_H}"
-    COMMAND "${PROTOC_EXECUTABLE}" "-I${CMAKE_BINARY_DIR}" "--c_out=${CMAKE_BINARY_DIR}" "${ONNX_PROTO_FILE}"
-    DEPENDS "${ONNX_PROTO_FILE}"
+    COMMAND "${PROTOC_EXECUTABLE}" "-I${ONNX_PROTO_DIR}" "--c_out=${CMAKE_BINARY_DIR}" "${ONNX_PROTO_DIR}/onnx.proto3"
+    DEPENDS "${ONNX_PROTO_DIR}/onnx.proto3"
     COMMENT "Generating ONNX protobuf-c sources"
     VERBATIM)
 
 add_library(ONNXProto STATIC "${ONNX_PROTO_C}")
-
 target_include_directories(ONNXProto PUBLIC "${CMAKE_BINARY_DIR}")
 
 # ╭──────────────────────────────────────╮
@@ -48,8 +53,7 @@ file(
     ${libonnx_SOURCE_DIR}/src/*.c
     ${libonnx_SOURCE_DIR}/src/default/*.c)
 add_library(onnx STATIC ${onnx_sources})
-
-target_include_directories(onnx SYSTEM PUBLIC ${libonnx_SOURCE_DIR}/src)
+target_include_directories(onnx SYSTEM PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
 target_link_libraries(onnx PUBLIC ONNXProto protobuf-c)
 set_target_properties(
     onnx
