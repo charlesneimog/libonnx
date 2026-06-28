@@ -43,6 +43,7 @@ add_custom_command(
 
 add_library(ONNXProto STATIC "${ONNX_PROTO_C}")
 target_include_directories(ONNXProto PUBLIC "${CMAKE_BINARY_DIR}")
+target_include_directories(ONNXProto PUBLIC "${protobuf-c_SOURCE_DIR}/")
 
 # ╭──────────────────────────────────────╮
 # │             ONNX Library             │
