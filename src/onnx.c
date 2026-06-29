@@ -561,6 +561,9 @@ static void resolver_solve_operator(struct onnx_resolver_t *r, struct onnx_node_
         case 0xdadf882f: /* "BitwiseAnd" */
             rop = r->op_BitwiseAnd;
             break;
+        case 0xd98a74ef: /* "BitCast" */
+            rop = r->op_BitCast;
+            break;
         case 0xdadfbfad: /* "BitwiseNot" */
             rop = r->op_BitwiseNot;
             break;
@@ -575,6 +578,9 @@ static void resolver_solve_operator(struct onnx_resolver_t *r, struct onnx_node_
             break;
         case 0x7c838882: /* "Ceil" */
             rop = r->op_Ceil;
+            break;
+        case 0xab3a7e31: /* "CausalConvWithState" */
+            rop = r->op_CausalConvWithState;
             break;
         case 0xb7db9db1: /* "Compress" */
             rop = r->op_Compress;
@@ -605,6 +611,9 @@ static void resolver_solve_operator(struct onnx_resolver_t *r, struct onnx_node_
             break;
         case 0x7c83b452: /* "Cosh" */
             rop = r->op_Cosh;
+            break;
+        case 0x420b565f: /* "CumProd" */
+            rop = r->op_CumProd;
             break;
         case 0xacab0fbf: /* "CumSum" */
             rop = r->op_CumSum;
@@ -999,6 +1008,9 @@ static void resolver_solve_operator(struct onnx_resolver_t *r, struct onnx_node_
             break;
         case 0x60d9a535: /* "LessOrEqual" */
             rop = r->op_LessOrEqual;
+            break;
+        case 0x95d24cb6: /* "LinearAttention" */
+            rop = r->op_LinearAttention;
             break;
         case 0xf8c82769: /* "LogSoftmax" */
             rop = r->op_LogSoftmax;

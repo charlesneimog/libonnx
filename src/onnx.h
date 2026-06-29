@@ -112,6 +112,7 @@ struct onnx_resolver_t {
     void (*op_AveragePool)(struct onnx_node_t *n);
     void (*op_BatchNormalization)(struct onnx_node_t *n);
     void (*op_Bernoulli)(struct onnx_node_t *n);
+    void (*op_BitCast)(struct onnx_node_t *n);
     void (*op_BitShift)(struct onnx_node_t *n);
     void (*op_BitwiseAnd)(struct onnx_node_t *n);
     void (*op_BitwiseNot)(struct onnx_node_t *n);
@@ -120,6 +121,7 @@ struct onnx_resolver_t {
     void (*op_BlackmanWindow)(struct onnx_node_t *n);
     void (*op_Cast)(struct onnx_node_t *n);
     void (*op_CastLike)(struct onnx_node_t *n);
+    void (*op_CausalConvWithState)(struct onnx_node_t *n);
     void (*op_Ceil)(struct onnx_node_t *n);
     void (*op_Celu)(struct onnx_node_t *n);
     void (*op_CenterCropPad)(struct onnx_node_t *n);
@@ -135,6 +137,7 @@ struct onnx_resolver_t {
     void (*op_ConvTranspose)(struct onnx_node_t *n);
     void (*op_Cos)(struct onnx_node_t *n);
     void (*op_Cosh)(struct onnx_node_t *n);
+    void (*op_CumProd)(struct onnx_node_t *n);
     void (*op_CumSum)(struct onnx_node_t *n);
     void (*op_DFT)(struct onnx_node_t *n);
     void (*op_DeformConv)(struct onnx_node_t *n);
@@ -183,6 +186,7 @@ struct onnx_resolver_t {
     void (*op_LeakyRelu)(struct onnx_node_t *n);
     void (*op_Less)(struct onnx_node_t *n);
     void (*op_LessOrEqual)(struct onnx_node_t *n);
+    void (*op_LinearAttention)(struct onnx_node_t *n);
     void (*op_Log)(struct onnx_node_t *n);
     void (*op_LogSoftmax)(struct onnx_node_t *n);
     void (*op_Loop)(struct onnx_node_t *n);
