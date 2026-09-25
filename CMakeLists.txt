@@ -7,17 +7,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 option(BUILD_TESTS "Build tests" ON)
 option(BUILD_EXAMPLES "Build examples" ON)
 option(LIBONNX_UPDATE_PROTO "Update Proto Language of ONNX" OFF)
-
-set(CPM_VERSION "0.42.1")
 set(ONNX_VERSION "v1.22.0")
-
-set(CPM_FILE "${CMAKE_BINARY_DIR}/CPM.cmake")
-
-if(NOT EXISTS "${CPM_FILE}")
-    file(DOWNLOAD "https://github.com/cpm-cmake/CPM.cmake/releases/download/v${CPM_VERSION}/CPM.cmake" "${CPM_FILE}")
-endif()
-
-include("${CPM_FILE}")
 
 set(onnx_sources)
 
@@ -31,15 +21,18 @@ if(LIBONNX_UPDATE_PROTO)
     file(MAKE_DIRECTORY "${ONNX_PROTO_OUT_DIR}")
     file(MAKE_DIRECTORY "${PROTOBUF_C_OUT_DIR}/protobuf-c")
 
-    cpmaddpackage("gh:protobuf-c/protobuf-c@1.5.2")
+    # protobuf-c
+    FetchContent_Declare(
+        protobuf-c
+        GIT_REPOSITORY https://github.com/protobuf-c/protobuf-c.git
+        GIT_TAG v1.5.2)
 
-    cpmaddpackage(
-        NAME
-        onnx_source
-        URL
-        "https://github.com/onnx/onnx/archive/refs/tags/${ONNX_VERSION}.zip"
-        DOWNLOAD_ONLY
-        YES)
+    FetchContent_MakeAvailable(protobuf-c)
+
+    # ONNX — download only
+    FetchContent_Declare(onnx_source URL "https://github.com/onnx/onnx/archive/refs/tags/${ONNX_VERSION}.zip"
+                                         SOURCE_SUBDIR __do_not_add__)
+    FetchContent_MakeAvailable(onnx_source)
 
     find_program(PROTOC_EXECUTABLE protoc REQUIRED)
     find_program(PROTOC_GEN_C_EXECUTABLE protoc-gen-c REQUIRED)
