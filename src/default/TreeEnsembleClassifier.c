@@ -225,20 +225,20 @@ static void TreeEnsembleClassifier_warn(struct onnx_node_t *n, const char *msg) 
                 (onnx_strlen(n->proto->domain) > 0) ? n->proto->domain : "ai.onnx.ml");
 }
 
-static tec_post_t TreeEnsembleClassifier_decode_post(const char *post) {
-    if (!post || onnx_strcmp(post, "NONE") == 0) {
+static tec_post_t TreeEnsembleClassifier_decode_post(const ProtobufCBinaryData *post) {
+    if (!post || !post->data || (post->len == 4 && onnx_memcmp(post->data, "NONE", 4) == 0)) {
         return TreeEnsembleClassifier_POST_NONE;
     }
-    if (onnx_strcmp(post, "SOFTMAX") == 0) {
+    if (post->len == 7 && onnx_memcmp(post->data, "SOFTMAX", 7) == 0) {
         return TreeEnsembleClassifier_POST_SOFTMAX;
     }
-    if (onnx_strcmp(post, "LOGISTIC") == 0) {
+    if (post->len == 8 && onnx_memcmp(post->data, "LOGISTIC", 8) == 0) {
         return TreeEnsembleClassifier_POST_LOGISTIC;
     }
-    if (onnx_strcmp(post, "PROBIT") == 0) {
+    if (post->len == 6 && onnx_memcmp(post->data, "PROBIT", 6) == 0) {
         return TreeEnsembleClassifier_POST_PROBIT;
     }
-    if (onnx_strcmp(post, "SOFTMAX_ZERO") == 0) {
+    if (post->len == 12 && onnx_memcmp(post->data, "SOFTMAX_ZERO", 12) == 0) {
         return TreeEnsembleClassifier_POST_SOFTMAX_ZERO;
     }
     return TreeEnsembleClassifier_POST_NONE;
@@ -345,8 +345,9 @@ static int TreeEnsembleClassifier_init(struct onnx_node_t *n) {
     P->F = F;
     P->input_is_float = x_isnan_supported_type(x);
 
-    P->post =
-        TreeEnsembleClassifier_decode_post(onnx_attribute_read_string(n, "post_transform", "NONE"));
+    Onnx__AttributeProto *post = TreeEnsembleClassifier_attr(n->proto, "post_transform");
+    P->post = TreeEnsembleClassifier_decode_post(
+        post && post->type == ONNX__ATTRIBUTE_PROTO__ATTRIBUTE_TYPE__STRING ? &post->s : NULL);
 
     P->base_values = (double *)onnx_malloc(sizeof(double) * (size_t)P->E);
     if (!P->base_values) {
